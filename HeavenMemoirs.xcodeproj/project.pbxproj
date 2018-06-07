@@ -49,7 +49,6 @@
 		12606A841FAC329A00B796C4 /* I Remember.aac in Resources */ = {isa = PBXBuildFile; fileRef = 12606A821FAC329A00B796C4 /* I Remember.aac */; };
 		12606A861FAC357500B796C4 /* HKMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12606A851FAC357500B796C4 /* HKMeViewController.swift */; };
 		127872331F7776CC00F1068D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127872321F7776CC00F1068D /* AppDelegate.swift */; };
-		127872351F7776CC00F1068D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 127872341F7776CC00F1068D /* art.scnassets */; };
 		127872371F7776CC00F1068D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127872361F7776CC00F1068D /* ViewController.swift */; };
 		1278723A1F7776CC00F1068D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127872381F7776CC00F1068D /* Main.storyboard */; };
 		1278723F1F7776CC00F1068D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1278723D1F7776CC00F1068D /* LaunchScreen.storyboard */; };
@@ -142,7 +141,6 @@
 		12606A851FAC357500B796C4 /* HKMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKMeViewController.swift; sourceTree = "<group>"; };
 		1278722F1F7776CC00F1068D /* HeavenMemoirs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeavenMemoirs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		127872321F7776CC00F1068D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		127872341F7776CC00F1068D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		127872361F7776CC00F1068D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		127872391F7776CC00F1068D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1278723E1F7776CC00F1068D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -370,7 +368,6 @@
 				12E5BE2B1F9CAA9500FD3F1F /* spark.png */,
 				12E5BE2E1F9CAB1000FD3F1F /* confetti.scnp */,
 				12E5BE2F1F9CAB1000FD3F1F /* confetti.png */,
-				127872341F7776CC00F1068D /* art.scnassets */,
 				12FAB3F61F78A86F0019FAB6 /* Assets.xcassets */,
 			);
 			path = Rescouces;
@@ -468,7 +465,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				124AC83C1FA9C7D8009773CA /* ITTPromptView.xib in Resources */,
-				127872351F7776CC00F1068D /* art.scnassets in Resources */,
 				12E5BE2D1F9CAA9500FD3F1F /* spark.png in Resources */,
 				1278723F1F7776CC00F1068D /* LaunchScreen.storyboard in Resources */,
 				123335A31F9854A50070C868 /* TZImagePickerController.bundle in Resources */,
@@ -772,7 +768,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = HeavenMemoirs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/hosa/Desktop/x/HeavenMemoirs/HeavenMemoirs/HeavenMemoirs-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/HeavenMemoirs/HeavenMemoirs-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -811,7 +807,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = HeavenMemoirs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/hosa/Desktop/x/HeavenMemoirs/HeavenMemoirs/HeavenMemoirs-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/HeavenMemoirs/HeavenMemoirs-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7 armv7s";
