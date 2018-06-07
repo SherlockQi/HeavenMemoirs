@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="7ly-hV-qPK" customClass="ITTPromptView">
+            <rect key="frame" x="0.0" y="0.0" width="315" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0wO-s2-MJV">
+                    <rect key="frame" x="0.0" y="0.0" width="315" height="67"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DHQ-Ux-Xf3">
+                            <rect key="frame" x="30" y="10" width="255" height="47"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kE9-vD-GRU">
+                            <rect key="frame" x="74" y="25" width="168" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="168" id="39M-rg-7z9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.91008657217025757" green="0.39112710952758789" blue="0.72174972295761108" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hudie_6" translatesAutoresizingMaskIntoConstraints="NO" id="38D-CQ-t11">
+                            <rect key="frame" x="275" y="27" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="bW4-xy-kg0"/>
+                                <constraint firstAttribute="height" constant="40" id="xZL-qL-o1h"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="kE9-vD-GRU" secondAttribute="centerX" id="1Ti-qY-cGN"/>
+                        <constraint firstItem="DHQ-Ux-Xf3" firstAttribute="leading" secondItem="0wO-s2-MJV" secondAttribute="leading" constant="30" id="Iog-zH-ifj"/>
+                        <constraint firstItem="DHQ-Ux-Xf3" firstAttribute="top" secondItem="0wO-s2-MJV" secondAttribute="top" constant="10" id="KHC-Md-56p"/>
+                        <constraint firstAttribute="trailing" secondItem="38D-CQ-t11" secondAttribute="trailing" id="NIF-pK-yqu"/>
+                        <constraint firstAttribute="trailing" secondItem="DHQ-Ux-Xf3" secondAttribute="trailing" constant="30" id="RdB-bT-kms"/>
+                        <constraint firstAttribute="centerY" secondItem="kE9-vD-GRU" secondAttribute="centerY" id="ku6-at-5Xc"/>
+                        <constraint firstAttribute="bottom" secondItem="DHQ-Ux-Xf3" secondAttribute="bottom" constant="10" id="uAc-qd-e4Z"/>
+                        <constraint firstAttribute="bottom" secondItem="38D-CQ-t11" secondAttribute="bottom" id="yBY-L1-U58"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hudie_4" translatesAutoresizingMaskIntoConstraints="NO" id="64W-qQ-bKt">
+                    <rect key="frame" x="8" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="8Rj-2t-IO2"/>
+                        <constraint firstAttribute="width" constant="40" id="HEU-JF-cQX"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="64W-qQ-bKt" firstAttribute="leading" secondItem="7ly-hV-qPK" secondAttribute="leading" constant="8" id="81K-Ct-HO2"/>
+                <constraint firstAttribute="bottom" secondItem="0wO-s2-MJV" secondAttribute="bottom" id="AXi-nH-hvM"/>
+                <constraint firstItem="64W-qQ-bKt" firstAttribute="top" secondItem="7ly-hV-qPK" secondAttribute="top" id="JIs-gu-7J5"/>
+                <constraint firstItem="0wO-s2-MJV" firstAttribute="top" secondItem="7ly-hV-qPK" secondAttribute="top" id="V5n-kh-2Qh"/>
+                <constraint firstItem="0wO-s2-MJV" firstAttribute="leading" secondItem="7ly-hV-qPK" secondAttribute="leading" id="Zce-ZB-bn0"/>
+                <constraint firstAttribute="trailing" secondItem="0wO-s2-MJV" secondAttribute="trailing" id="drl-Ya-XFf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_message" destination="kE9-vD-GRU" id="W7g-ry-EZs"/>
+                <outlet property="messageimgView" destination="DHQ-Ux-Xf3" id="SEr-So-2e1"/>
+            </connections>
+            <point key="canvasLocation" x="268.5" y="80.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hudie_4" width="81" height="81"/>
+        <image name="hudie_6" width="99" height="82"/>
+    </resources>
+</document>

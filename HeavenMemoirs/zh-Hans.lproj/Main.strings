@@ -1,0 +1,171 @@
+
+/* Class = "UIButton"; normalTitle = "下雨"; ObjectID = "0wo-nR-cNt"; */
+"0wo-nR-cNt.normalTitle" = "下雨";
+
+/* Class = "UILabel"; text = "录制中..."; ObjectID = "1sJ-KP-tTm"; */
+"1sJ-KP-tTm.text" = "录制中...";
+
+/* Class = "UIButton"; normalTitle = "确定"; ObjectID = "3Fs-td-aXq"; */
+"3Fs-td-aXq.normalTitle" = "确定";
+
+/* Class = "UIButton"; normalTitle = "开启"; ObjectID = "3gU-2A-zRA"; */
+"3gU-2A-zRA.normalTitle" = "开启";
+
+/* Class = "UILabel"; text = "选择方形图片"; ObjectID = "61V-8P-SEk"; */
+"61V-8P-SEk.text" = "选择方形图片";
+
+/* Class = "UIButton"; normalTitle = "-"; ObjectID = "6g7-ZT-576"; */
+"6g7-ZT-576.normalTitle" = "-";
+
+/* Class = "UIButton"; normalTitle = "分享"; ObjectID = "9Yl-Su-uSZ"; */
+"9Yl-Su-uSZ.normalTitle" = "分享";
+
+/* Class = "UIViewController"; title = "Memoirs"; ObjectID = "ARs-Ne-win"; */
+"ARs-Ne-win.title" = "Memoirs";
+
+/* Class = "UILabel"; text = " 返回项目"; ObjectID = "AhJ-zk-0a5"; */
+"AhJ-zk-0a5.text" = " 返回项目";
+
+/* Class = "UIButton"; normalTitle = "录屏"; ObjectID = "C3z-EY-c8H"; */
+"C3z-EY-c8H.normalTitle" = "录屏";
+
+/* Class = "UIButton"; selectedTitle = "取消静音"; ObjectID = "Cd1-tt-jV1"; */
+"Cd1-tt-jV1.selectedTitle" = "取消静音";
+
+/* Class = "UIButton"; normalTitle = "复位"; ObjectID = "Coe-C7-acT"; */
+"Coe-C7-acT.normalTitle" = "复位";
+
+/* Class = "UILabel"; text = "选择全景图"; ObjectID = "EAx-VC-Vb1"; */
+"EAx-VC-Vb1.text" = "选择全景图";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "F2c-5D-BPr"; */
+"F2c-5D-BPr.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "textColor_5"; ObjectID = "H52-qC-20D"; */
+"H52-qC-20D.normalTitle" = "textColor_5";
+
+/* Class = "UIButton"; selectedTitle = "༻"; ObjectID = "H52-qC-20D"; */
+"H52-qC-20D.selectedTitle" = "༻";
+
+/* Class = "UIButton"; normalTitle = "彩带"; ObjectID = "IF7-38-PVe"; */
+"IF7-38-PVe.normalTitle" = "彩带";
+
+/* Class = "UIButton"; normalTitle = "全景..."; ObjectID = "Ire-If-jbS"; */
+"Ire-If-jbS.normalTitle" = "全景...";
+
+/* Class = "UILabel"; text = "选择背景音乐"; ObjectID = "KPU-sP-cVh"; */
+"KPU-sP-cVh.text" = "选择背景音乐";
+
+/* Class = "UILabel"; text = "双击屏幕恢复陀螺仪控制"; ObjectID = "KWl-JL-wUd"; */
+"KWl-JL-wUd.text" = "双击屏幕恢复陀螺仪控制";
+
+/* Class = "UIButton"; normalTitle = "textColor_3"; ObjectID = "Lhq-hc-aiD"; */
+"Lhq-hc-aiD.normalTitle" = "textColor_3";
+
+/* Class = "UIButton"; selectedTitle = "༻"; ObjectID = "Lhq-hc-aiD"; */
+"Lhq-hc-aiD.selectedTitle" = "༻";
+
+/* Class = "UILabel"; text = "选择播放视频"; ObjectID = "MFm-PC-Df5"; */
+"MFm-PC-Df5.text" = "选择播放视频";
+
+/* Class = "UILabel"; text = "简书:Heikki_"; ObjectID = "O1X-fT-1R5"; */
+"O1X-fT-1R5.text" = "简书:Heikki_";
+
+/* Class = "UIViewController"; title = "场景"; ObjectID = "O85-yQ-5Mt"; */
+"O85-yQ-5Mt.title" = "场景";
+
+/* Class = "UILabel"; text = "向上滑动,唤出控制中心,即可录制视频."; ObjectID = "OSK-sc-E7i"; */
+"OSK-sc-E7i.text" = "向上滑动,唤出控制中心,即可录制视频.";
+
+/* Class = "UIButton"; normalTitle = "梦幻"; ObjectID = "QNM-Rx-VSb"; */
+"QNM-Rx-VSb.normalTitle" = "梦幻";
+
+/* Class = "UIButton"; normalTitle = "全景"; ObjectID = "U9c-Ee-zah"; */
+"U9c-Ee-zah.normalTitle" = "全景";
+
+/* Class = "UILabel"; text = "选择竖向图片"; ObjectID = "Ud2-Hx-xfQ"; */
+"Ud2-Hx-xfQ.text" = "选择竖向图片";
+
+/* Class = "UIButton"; normalTitle = "textColor_1"; ObjectID = "Wl1-M7-cw6"; */
+"Wl1-M7-cw6.normalTitle" = "textColor_1";
+
+/* Class = "UIButton"; selectedTitle = "༻"; ObjectID = "Wl1-M7-cw6"; */
+"Wl1-M7-cw6.selectedTitle" = "༻";
+
+/* Class = "UIButton"; normalTitle = "textColor_7"; ObjectID = "aIa-sf-jb3"; */
+"aIa-sf-jb3.normalTitle" = "textColor_7";
+
+/* Class = "UIButton"; selectedTitle = "༻"; ObjectID = "aIa-sf-jb3"; */
+"aIa-sf-jb3.selectedTitle" = "༻";
+
+/* Class = "UIButton"; normalTitle = "完成"; ObjectID = "agD-t4-cuP"; */
+"agD-t4-cuP.normalTitle" = "完成";
+
+/* Class = "UIButton"; normalTitle = "设置"; ObjectID = "avd-Lk-2EA"; */
+"avd-Lk-2EA.normalTitle" = "设置";
+
+/* Class = "UIButton"; normalTitle = "textColor_4"; ObjectID = "c2L-Hp-lIu"; */
+"c2L-Hp-lIu.normalTitle" = "textColor_4";
+
+/* Class = "UIButton"; selectedTitle = "༻"; ObjectID = "c2L-Hp-lIu"; */
+"c2L-Hp-lIu.selectedTitle" = "༻";
+
+/* Class = "UITextField"; placeholder = "输入想显示的文字"; ObjectID = "caF-GA-XMe"; */
+"caF-GA-XMe.placeholder" = "输入想显示的文字";
+
+/* Class = "UILabel"; text = "再次点击,完成录屏,视频将保持在相册中"; ObjectID = "csv-CI-r83"; */
+"csv-CI-r83.text" = "再次点击,完成录屏,视频将保持在相册中";
+
+/* Class = "UILabel"; text = "项目部分素材来自网络如有侵权请联系删除,谢谢!"; ObjectID = "hr9-of-F8t"; */
+"hr9-of-F8t.text" = "项目部分素材来自网络如有侵权请联系删除,谢谢!";
+
+/* Class = "UIButton"; normalTitle = "textColor_0"; ObjectID = "hy2-sD-3s8"; */
+"hy2-sD-3s8.normalTitle" = "textColor_0";
+
+/* Class = "UIButton"; selectedTitle = "༻"; ObjectID = "hy2-sD-3s8"; */
+"hy2-sD-3s8.selectedTitle" = "༻";
+
+/* Class = "UILabel"; text = "https://github.com/SherlockQi"; ObjectID = "lby-q6-5FT"; */
+"lby-q6-5FT.text" = "https://github.com/SherlockQi";
+
+/* Class = "UILabel"; text = "选择横向图片"; ObjectID = "o9x-m4-sFP"; */
+"o9x-m4-sFP.text" = "选择横向图片";
+
+/* Class = "UIButton"; normalTitle = "textColor_6"; ObjectID = "peU-Pf-l6D"; */
+"peU-Pf-l6D.normalTitle" = "textColor_6";
+
+/* Class = "UIButton"; selectedTitle = "༻"; ObjectID = "peU-Pf-l6D"; */
+"peU-Pf-l6D.selectedTitle" = "༻";
+
+/* Class = "UIButton"; normalTitle = "textColor_2"; ObjectID = "pxa-Iu-2B9"; */
+"pxa-Iu-2B9.normalTitle" = "textColor_2";
+
+/* Class = "UIButton"; selectedTitle = "༻"; ObjectID = "pxa-Iu-2B9"; */
+"pxa-Iu-2B9.selectedTitle" = "༻";
+
+/* Class = "UILabel"; text = "输入显示文字"; ObjectID = "r8I-F2-JN5"; */
+"r8I-F2-JN5.text" = "输入显示文字";
+
+/* Class = "UILabel"; text = "QQ:408509637"; ObjectID = "uMt-sP-ZNK"; */
+"uMt-sP-ZNK.text" = "QQ:408509637";
+
+/* Class = "UIButton"; normalTitle = "选择"; ObjectID = "vjr-HR-V2c"; */
+"vjr-HR-V2c.normalTitle" = "选择";
+
+/* Class = "UILabel"; text = "随机显示"; ObjectID = "whb-RN-05d"; */
+"whb-RN-05d.text" = "随机显示";
+
+/* Class = "UIButton"; normalTitle = "选择"; ObjectID = "xq9-r0-lgf"; */
+"xq9-r0-lgf.normalTitle" = "选择";
+
+/* Class = "UILabel"; text = "选择粒子效果"; ObjectID = "xwe-k5-SPe"; */
+"xwe-k5-SPe.text" = "选择粒子效果";
+
+/* Class = "UILabel"; text = "github:"; ObjectID = "ywW-fI-HP0"; */
+"ywW-fI-HP0.text" = "github:";
+
+/* Class = "UILabel"; text = "设置->控制中心->自定控制->添加屏幕录制"; ObjectID = "zkT-Pf-BQv"; */
+"zkT-Pf-BQv.text" = "设置->控制中心->自定控制->添加屏幕录制";
+
+/* Class = "UIButton"; normalTitle = "选择"; ObjectID = "zsf-MT-brS"; */
+"zsf-MT-brS.normalTitle" = "选择";

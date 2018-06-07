@@ -1,0 +1,30 @@
+PODS:
+  - Bugly (2.4.8)
+  - NVActivityIndicatorView (4.0.0):
+    - NVActivityIndicatorView/Presenter (= 4.0.0)
+  - NVActivityIndicatorView/Presenter (4.0.0)
+  - UMengUShare/Core (6.4.6):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.4.6)
+  - UMengUShare/Social/ReducedQQ (6.4.6):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedWeChat (6.4.6):
+    - UMengUShare/Core
+  - UMengUShare/UI (6.4.6):
+    - UMengUShare/Core
+
+DEPENDENCIES:
+  - Bugly
+  - NVActivityIndicatorView
+  - UMengUShare/Social/ReducedQQ
+  - UMengUShare/Social/ReducedWeChat
+  - UMengUShare/UI
+
+SPEC CHECKSUMS:
+  Bugly: da3c02408c14838d498429320545a8e439392978
+  NVActivityIndicatorView: 54c9b93b6f25a4f467512680c0c90c09a1095cf2
+  UMengUShare: fdbbf86353976727af26a66e9a84314ecb59c816
+
+PODFILE CHECKSUM: 8017c6c9147324ae389069acf62a8fc1e56437a5
+
+COCOAPODS: 1.3.1
