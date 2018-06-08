@@ -6,14 +6,14 @@ https://itunes.apple.com/cn/app/weare/id1304227680?mt=8
 
 ![image](https://github.com/SherlockQi/HKNote/blob/master/image/WeAre.gif)
 # HeavenMemoirs
-#技术点
-####AR初始化
+**技术点**
+>AR初始化
 在新建项目时可以直接创建 AR 项目, xcode 会创造一个 AR 项目的模板.
 
 也可以创建普通的项目,在需要实现 AR 功能的控制器中实现如下代码进行初始化.
 ```
-   import ARKit
-   let sceneView = ARSCNView()
+      import ARKit
+      let sceneView = ARSCNView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +45,7 @@ https://itunes.apple.com/cn/app/weare/id1304227680?mt=8
         sceneView.session.pause()
     }
 ```
-####添加节点
+>添加节点
 ```
         //我使用的是 SCNPlane 来充当相框,也可以使用"厚度"很小的 SCNBox
         let photo = SCNPlane(width: 1, height: 1)
@@ -84,7 +84,7 @@ SCNTorus 圆环
 SCNFloor 地板  
 SCNShape 自定义
 ```
-####全景图实现
+>全景图实现
 ```
 想象自己站在一个球的球心处,球的内表面涂着壁画,那么是不是就实现了全景图.
 所以用一个Sphere 节点包裹着相机节点(也就是0位置节点),再设置Sphere节点的内表面纹理,就实现了功能.
@@ -96,7 +96,7 @@ SCNShape 自定义
         scene.rootNode.addChildNode(sphereNode)
 ```
 
-####播放视频
+>播放视频
 ```
             let height:CGFloat = CGFloat(width) * videoSize.height/videoSize.width
             let box = SCNBox(width: width, height: height, length: 0.3, chamferRadius: 0)
@@ -122,7 +122,7 @@ SCNShape 自定义
             box.firstMaterial?.diffuse.contents = skScene
             videoNode.play()
 ```
-####粒子效果
+>粒子效果
 ```
             /*
               particleName = "bokeh.scnp"
@@ -134,7 +134,7 @@ SCNShape 自定义
             particleNode.position = SCNVector3Make(0, Y, 0)
             self.scene.rootNode.addChildNode(particleNode)
 ```
-####节点点击事件
+>节点点击事件
 ```
       //给 场景视图sceneView 添加点击事件
        let tap = UITapGestureRecognizer(target: self, action: #selector(tapHandle(gesture:)))
@@ -156,7 +156,7 @@ SCNShape 自定义
         }
     }
 ```
-####节点动画
+>节点动画
 我的另一篇文章中有详细记录[ARKit-动画](https://www.jianshu.com/p/94a41be9477f)
 //拉近(推远)照片
 ```
@@ -165,7 +165,7 @@ SCNShape 自定义
           let comeOut = SCNAction.move(to: newPosition, duration: 1.2)
           firstNode.node.runAction(comeOut)
 ```
-####自传/公转
+>自传/公转
 
 ```
             //自转
@@ -181,7 +181,7 @@ SCNShape 自定义
             boxNode.runAction(ringAction)
             //公转 把节点加到一个正在自传的节点上就可以了
 ```
-####录屏
+>录屏
 录屏是使用ReplayKit完成的
 开始录屏
 ```
