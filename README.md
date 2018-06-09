@@ -107,7 +107,6 @@ https://itunes.apple.com/cn/app/weare/id1304227680?mt=8
       box.firstMaterial?.diffuse.contents = UIColor.red
       self.scene.rootNode.addChildNode(boxNode);
             
-            
       let avplayer = AVPlayer(url: url)
       avplayer.volume = rescoucceConfiguration.video_isSilence ? 0.0 : 3.0
       videoPlayer = avplayer
@@ -151,7 +150,7 @@ https://itunes.apple.com/cn/app/weare/id1304227680?mt=8
       let node = firstNode.node.copy() as! SCNNode
       if firstNode.node == self.selectNode {
             ...推远照片...
-      }else{
+          }else{
             ...拉近照片...
             selectNode = node
       }
@@ -195,20 +194,14 @@ https://itunes.apple.com/cn/app/weare/id1304227680?mt=8
 录制代理
 ```
 func screenRecorder(_ screenRecorder: RPScreenRecorder, didStopRecordingWith previewViewController: RPPreviewViewController?, error: Error?) {
-        print(error ?? "error")
         if error != nil{
-            print("error:", error ?? "")
             DispatchQueue.main.async {
                 let string = error?.localizedDescription
                 ITTPromptView .showMessage(string, andFrameY: 0)
-                print(string ?? "")
                 //录制期间失败
                 self.showFailReplay()
             }
-        }else{
-            print("else")
         }
-        print("start recording handler")
     }
     //录制失败
     func showFailReplay(){
