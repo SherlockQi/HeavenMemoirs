@@ -16,16 +16,16 @@ https://itunes.apple.com/cn/app/weare/id1304227680?mt=8
       let sceneView = ARSCNView()
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        sceneView.frame = view.bounds
-        view.addSubview(sceneView)
+         super.viewDidLoad()
+         sceneView.frame = view.bounds
+         view.addSubview(sceneView)
 
-        sceneView.delegate = self
-        sceneView.showsStatistics = true
+         sceneView.delegate = self
+         sceneView.showsStatistics = true
       
-        // 创建一个场景,系统默认是没有的
-        let scene = SCNScene()
-        sceneView.scene = scene
+         // 创建一个场景,系统默认是没有的
+         let scene = SCNScene()
+         sceneView.scene = scene
 
           //不允许用户操作摄像机
          sceneView.allowsCameraControl = false
@@ -64,7 +64,7 @@ https://itunes.apple.com/cn/app/weare/id1304227680?mt=8
       let text = SCNText(string: "文字", extrusionDepth: 0.1)
       text.font = UIFont.systemFont(ofSize: 0.4)
       let textNode = SCNNode(geometry: text)
-      textNode.position = SCNVector3Make(0,0, -1)
+      textNode.position = SCNVector3Make(0, 0, -1)
       //文字的图片/颜色
       text.firstMaterial?.diffuse.contents = UIImage(named: color)
       sceneView.scene.rootNode.addChildNode(textNode)
@@ -101,17 +101,17 @@ https://itunes.apple.com/cn/app/weare/id1304227680?mt=8
 ```
       let height:CGFloat = CGFloat(width) * videoSize.height/videoSize.width
       let box = SCNBox(width: width, height: height, length: 0.3, chamferRadius: 0)
-      boxNode.geometry = box;
+      boxNode.geometry = box
       boxNode.geometry?.firstMaterial?.isDoubleSided = true
-      boxNode.position = SCNVector3Make(0, 0, -5);
+      boxNode.position = SCNVector3Make(0, 0, -5)
       box.firstMaterial?.diffuse.contents = UIColor.red
-      self.scene.rootNode.addChildNode(boxNode);
+      self.scene.rootNode.addChildNode(boxNode)
             
       let avplayer = AVPlayer(url: url)
       avplayer.volume = rescoucceConfiguration.video_isSilence ? 0.0 : 3.0
       videoPlayer = avplayer
       let videoNode = SKVideoNode(avPlayer: avplayer)
-      NotificationCenter.default.addObserver(self, selector: #selector(playEnd(notify:)), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil)
+      NotificationCenter.default.addObserver(self, selector: #selector(playEnd(notify: )), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil)
             
       videoNode.size = CGSize(width: 1600, height: 900)
       videoNode.position = CGPoint(x: videoNode.size.width/2, y: videoNode.size.height/2)
@@ -141,7 +141,7 @@ https://itunes.apple.com/cn/app/weare/id1304227680?mt=8
       sceneView.addGestureRecognizer(tap)
 ```
 ```
-  @objc func tapHandle(gesture:UITapGestureRecognizer){
+  @objc func tapHandle(gesture:UITapGestureRecognizer) {
       let results:[SCNHitTestResult] = (self.sceneView?.hitTest(gesture.location(ofTouch: 0, in: self.sceneView), options: nil))!
       guard let firstNode  = results.first else{
             return
@@ -150,7 +150,7 @@ https://itunes.apple.com/cn/app/weare/id1304227680?mt=8
       let node = firstNode.node.copy() as! SCNNode
       if firstNode.node == self.selectNode {
             ...推远照片...
-          }else{
+          } else {
             ...拉近照片...
             selectNode = node
       }
@@ -179,7 +179,7 @@ https://itunes.apple.com/cn/app/weare/id1304227680?mt=8
       photoRingNode.addChildNode(emptyNode)
       let ringAction = SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: right, z: 0, duration: 2))
       boxNode.runAction(ringAction)
-            //公转 把节点加到一个正在自传的节点上就可以了
+      //公转 把节点加到一个正在自传的节点上就可以了
 ```
 >录屏
 录屏是使用ReplayKit完成的
@@ -194,7 +194,7 @@ https://itunes.apple.com/cn/app/weare/id1304227680?mt=8
 录制代理
 ```
 func screenRecorder(_ screenRecorder: RPScreenRecorder, didStopRecordingWith previewViewController: RPPreviewViewController?, error: Error?) {
-        if error != nil{
+        if error != nil {
             DispatchQueue.main.async {
                 let string = error?.localizedDescription
                 ITTPromptView .showMessage(string, andFrameY: 0)
@@ -204,7 +204,7 @@ func screenRecorder(_ screenRecorder: RPScreenRecorder, didStopRecordingWith pre
         }
     }
     //录制失败
-    func showFailReplay(){
+    func showFailReplay() {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: "HKExplainViewController")
         self.navigationController?.pushViewController(vc, animated: true)
@@ -221,11 +221,13 @@ func screenRecorder(_ screenRecorder: RPScreenRecorder, didStopRecordingWith pre
 ```
 结束并弹出预览控制器
 ```
-      RPScreenRecorder.shared().stopRecording { (vc, erroe) in
+     RPScreenRecorder.shared().stopRecording { (vc, error) in
+            if error != nil {
             vc?.previewControllerDelegate = self
             vc?.title = "We Are"
             self.present(vc!, animated: true, completion: nil)
-      }
+            }
+        }
 ```
 预览控制器的代理
 ```
@@ -236,7 +238,7 @@ func screenRecorder(_ screenRecorder: RPScreenRecorder, didStopRecordingWith pre
             previewController.dismiss(animated: true, completion: nil)
         }
         //保存
-        if activityTypes.contains("com.apple.UIKit.activity.SaveToCameraRoll"){
+        if activityTypes.contains("com.apple.UIKit.activity.SaveToCameraRoll") {
             ITTPromptView .showMessage("视频已保存在相册", andFrameY: 0)
             previewController.dismiss(animated: true, completion: nil)
             //检测到您刚刚保存了视频 是否想要分享
