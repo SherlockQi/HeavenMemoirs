@@ -9,27 +9,18 @@
 import UIKit
 
 class HKImageCollectionViewCell: UICollectionViewCell {
-
-
-    
-    let imageView:UIImageView = UIImageView()
-    
+    let imageView: UIImageView = UIImageView()
     lazy var deleteButton: UIButton = {
         let button = UIButton(frame: CGRect(x: contentView.bounds.width - 25, y: 2, width: 30, height: 30))
         button.setImage(UIImage(named: "photo_delete"), for: .normal)
         button.addTarget(self, action: #selector(deleteButtonDidClick), for: .touchUpInside)
-
         return button
     }()
-    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-    
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
-//        imageView.frame = CGRect(x: 8, y: 4, width: frame.size.width - 8, height: frame.size.height - 16)
         imageView.frame = contentView.bounds
         imageView.contentMode = .scaleAspectFill
         imageView.layer.masksToBounds = true
@@ -37,22 +28,18 @@ class HKImageCollectionViewCell: UICollectionViewCell {
         contentView.addSubview(deleteButton)
         deleteButton.isHidden = true
     }
-    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    func cellShake(shake:Bool){
-        if shake{
+    func cellShake(shake: Bool) {
+        if shake {
             beginShake()
-        }else{
+        } else {
             endShake()
         }
     }
-    
-   private func beginShake(){
+    private func beginShake() {
         deleteButton.isHidden = false
-
         let animation = CABasicAnimation(keyPath: "transform.rotation.z")
         animation.duration = 0.08
         animation.fromValue = -Float.pi/40
@@ -62,12 +49,11 @@ class HKImageCollectionViewCell: UICollectionViewCell {
         self.imageView.layer.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         self.imageView.layer.add(animation, forKey: "cellShake")
     }
-    
-   private func endShake(){
-         deleteButton.isHidden = true
+    private func endShake() {
+        deleteButton.isHidden = true
         self.imageView.layer.removeAnimation(forKey: "cellShake")
     }
-    @objc func deleteButtonDidClick(){
+    @objc func deleteButtonDidClick() {
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "Notification_NAME_ImageDetele"), object: self)
     }
 }

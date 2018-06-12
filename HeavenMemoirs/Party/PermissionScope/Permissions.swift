@@ -17,18 +17,13 @@ import CoreMotion
 import CloudKit
 import Accounts
 
-/**
-*  Protocol for permission configurations.
-*/
 @objc public protocol Permission {
-    /// Permission type
     var type: PermissionType { get }
 }
 
 @objc public class NotificationsPermission: NSObject, Permission {
     public let type: PermissionType = .notifications
     public let notificationCategories: Set<UIUserNotificationCategory>?
-    
     public init(notificationCategories: Set<UIUserNotificationCategory>? = nil) {
         self.notificationCategories = notificationCategories
     }

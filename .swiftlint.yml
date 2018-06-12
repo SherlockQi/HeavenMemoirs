@@ -1,0 +1,16 @@
+excluded: 
+- Pods
+- HeavenMemoirs/Party
+
+disabled_rules: # 禁用指定的规则
+- identifier_name
+- line_length
+- file_length
+- type_body_length
+- force_cast
+
+opt_in_rules: # 启用指定的规则
+
+
+
+

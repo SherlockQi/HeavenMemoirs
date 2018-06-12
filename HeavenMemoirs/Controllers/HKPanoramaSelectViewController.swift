@@ -13,7 +13,7 @@ class HKPanoramaSelectViewController: UIViewController {
     @IBOutlet weak var arSCNView: ARSCNView!
     @IBOutlet weak var lastButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
-    let  imageNames:[String] = ["panorama_0",
+    let  imageNames: [String] = ["panorama_0",
                                 "panorama_1",
                                 "panorama_2",
                                 "panorama_3",
@@ -27,19 +27,19 @@ class HKPanoramaSelectViewController: UIViewController {
                                 "panorama_11",
                                 "panorama_12"]
     let sphere = SCNSphere(radius: 10)
-    var index: Int = 0{
-        didSet{
+    var index: Int = 0 {
+        didSet {
             nextButton.isHidden = index == imageNames.count - 1
             lastButton.isHidden = index == 0
-            if index >= 0 && index < imageNames.count{
-                if let newImage = UIImage(named: imageNames[index]){
+            if index >= 0 && index < imageNames.count {
+                if let newImage = UIImage(named: imageNames[index]) {
                     image = newImage
                 }
             }
         }
     }
-    var image: UIImage = UIImage(){
-        didSet{
+    var image: UIImage = UIImage() {
+        didSet {
             sphere.firstMaterial?.diffuse.contents = image
         }
     }
@@ -72,11 +72,10 @@ class HKPanoramaSelectViewController: UIViewController {
         index = 0
         let sphereNode = SCNNode(geometry: sphere)
         sphere.firstMaterial?.isDoubleSided = true
-        if let imageName = imageNames.first{
+        if let imageName = imageNames.first {
             sphere.firstMaterial?.diffuse.contents = UIImage(named: imageName)
         }
         sphereNode.position = SCNVector3Zero
         arSCNView.scene.rootNode.addChildNode(sphereNode)
     }
-    
 }

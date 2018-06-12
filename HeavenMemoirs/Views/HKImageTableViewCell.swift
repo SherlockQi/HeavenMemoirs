@@ -9,10 +9,8 @@
 import UIKit
 
 class HKImageTableViewCell: UITableViewCell {
-
     @IBOutlet weak var preImageView: UIImageView!
-   override func awakeFromNib() {
+    override func awakeFromNib() {
         super.awakeFromNib()
     }
-
 }

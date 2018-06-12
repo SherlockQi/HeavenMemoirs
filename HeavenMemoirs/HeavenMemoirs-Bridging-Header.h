@@ -5,10 +5,5 @@
 #import "TZImagePickerController.h"
 #import "ITTPromptView.h"
 #import <Bugly/Bugly.h>
-
 #import <UMSocialCore/UMSocialCore.h>
 #import <UShareUI/UShareUI.h>
-
-//#import "WXApiObject.h"
-//#import "WXApi.h"
-

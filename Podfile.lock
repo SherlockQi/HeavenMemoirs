@@ -3,6 +3,7 @@ PODS:
   - NVActivityIndicatorView (4.0.0):
     - NVActivityIndicatorView/Presenter (= 4.0.0)
   - NVActivityIndicatorView/Presenter (4.0.0)
+  - SwiftLint (0.25.0)
   - UMengUShare/Core (6.4.6):
     - UMengUShare/Network
   - UMengUShare/Network (6.4.6)
@@ -16,6 +17,7 @@ PODS:
 DEPENDENCIES:
   - Bugly
   - NVActivityIndicatorView
+  - SwiftLint
   - UMengUShare/Social/ReducedQQ
   - UMengUShare/Social/ReducedWeChat
   - UMengUShare/UI
@@ -23,8 +25,9 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Bugly: da3c02408c14838d498429320545a8e439392978
   NVActivityIndicatorView: 54c9b93b6f25a4f467512680c0c90c09a1095cf2
+  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
   UMengUShare: fdbbf86353976727af26a66e9a84314ecb59c816
 
-PODFILE CHECKSUM: 8017c6c9147324ae389069acf62a8fc1e56437a5
+PODFILE CHECKSUM: c3ab3e3ce7294966554286fa9a02f181c47303e4
 
 COCOAPODS: 1.3.1

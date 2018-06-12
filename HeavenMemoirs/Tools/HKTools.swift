@@ -12,14 +12,12 @@ let kScreenWidth = UIScreen.main.bounds.size.width
 let kScreenHeight = UIScreen.main.bounds.size.height
 
 class HKTools: NSObject {
-
-    func toAppStore(vc:UIViewController){
+    func toAppStore(vc: UIViewController) {
         let alertController = UIAlertController(title: "可还满意?给我个评价吧！",
                                                 message: nil, preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: "暂不评价", style: .cancel, handler: nil)
         let okAction = UIAlertAction(title: "好的", style: .default,
-                                     handler: {
-                                        action in
+                                     handler: { _ in
                                         self.gotoAppStore()
         })
         alertController.addAction(cancelAction)
@@ -28,12 +26,6 @@ class HKTools: NSObject {
     }
     func gotoAppStore() {
         let url = URL(string: "itms-apps://itunes.apple.com/cn/app/weare/id1304227680?action=write-review")
-        UIApplication.shared.open(url!,options: [:], completionHandler: nil)
+        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
     }
-    
-    
-
-    
-    
 }
-

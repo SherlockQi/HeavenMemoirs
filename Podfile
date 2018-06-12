@@ -12,5 +12,5 @@ pod 'Bugly'
 pod 'UMengUShare/UI'
 pod 'UMengUShare/Social/ReducedWeChat'
 pod 'UMengUShare/Social/ReducedQQ'
-#pod 'UMengUShare/Social/ReducedSina'
+pod 'SwiftLint'
 end

@@ -413,6 +413,7 @@
 				1278722D1F7776CC00F1068D /* Resources */,
 				0803A73AD2FD86FB99D149AC /* [CP] Embed Pods Frameworks */,
 				94F3938B87A773AFED701994 /* [CP] Copy Pods Resources */,
+				126E5CBE20CF9CB300BAD50A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -508,6 +509,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeavenMemoirs/Pods-HeavenMemoirs-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		126E5CBE20CF9CB300BAD50A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 		3BB8CBD0F8CAD5DB8355DE4A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

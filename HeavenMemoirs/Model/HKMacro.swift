@@ -28,7 +28,3 @@ let k_C_video_isSilence           = "RescouceManager_KEY_video_isSilence"
 let k_C_voice_isPlay              = "RescouceManager_KEY_voice_isPlay"
 let k_C_text_isShow               = "RescouceManager_KEY_text_isShow"
 let k_C_particle_isShow           = "RescouceManager_KEY_particle_isShow"
-
-
-
-
