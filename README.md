@@ -249,6 +249,6 @@ func screenRecorder(_ screenRecorder: RPScreenRecorder, didStopRecordingWith pre
         }
     }
 ```
-欢迎(跪求)Star!
+
 
 作者[简书](https://www.jianshu.com/u/cb1c0acc26c2)
