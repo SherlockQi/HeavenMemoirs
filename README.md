@@ -1,6 +1,6 @@
 # HeavenMemoirs - AR相册
 
-#### 如有ARKit相关工作机会(全职)可与我联系~感谢.
+#### 如有ARKit相关工作机会(全职)可与我联系~感谢. QQ:408509637
 
 
 线上地址
@@ -254,3 +254,4 @@ func screenRecorder(_ screenRecorder: RPScreenRecorder, didStopRecordingWith pre
 
 
 作者[简书](https://www.jianshu.com/u/cb1c0acc26c2)
+
