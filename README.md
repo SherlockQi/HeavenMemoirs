@@ -1,6 +1,8 @@
 # HeavenMemoirs - AR相册
 ARKit 
 
+#如有ARKit相关工作机会请与我联系~感谢.
+
 线上地址
 https://itunes.apple.com/cn/app/weare/id1304227680?mt=8
 
