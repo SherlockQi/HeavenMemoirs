@@ -1,8 +1,5 @@
 # HeavenMemoirs - AR相册
 
-#### 如有ARKit相关工作机会可与我联系~感谢. QQ:408509637
-
-
 线上地址
 https://itunes.apple.com/cn/app/weare/id1304227680?mt=8
 
