@@ -252,3 +252,4 @@ func screenRecorder(_ screenRecorder: RPScreenRecorder, didStopRecordingWith pre
 
 作者[简书](https://www.jianshu.com/u/cb1c0acc26c2)
 
+联系作者 xiaqi5477@gmail.com
